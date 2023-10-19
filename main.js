@@ -9,10 +9,10 @@ buttonElement.addEventListener('click', () => {
 
     // valida que se haya ingresado algo
     if (inputData.trim() === '') {
-        alert('Por favor, ingrese algo válido.');
+        outputElement.innerHTML = 'Por favor, ingrese algo válido.';
         return;
     }
-
+    
     // realiza algun procesamiento con los datos de entrada
     const processedData = processData(inputData);
 
